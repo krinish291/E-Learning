@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $("#hide").click(function(){
+      $("#me").toggle(100);
+    });
+    $("#show").click(function(){
+      $("#you").toggle(100);
+    });
+    $("#dis").click(function(){
+      $("#them").toggle(100);
+    });
+  });

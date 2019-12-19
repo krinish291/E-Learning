@@ -1,0 +1,347 @@
+<nav class="navbar navbar-default navbar-fixed-top" data-aos="fade-down" data-aos-delay="500" data-aos-duration="500">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                       
+        </button>
+        
+        <p class="navbar-brand"   routerLink="/">Dev's Tutorial</p>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#tutorials"><b>TUTORIALS</b></a></li>
+          <li><a href="#services">COURSES</a></li>
+          <li><a href="#portfolio">ACTIVITY</a></li>
+          <li><a href="#pricing">PRICING</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        
+
+         
+     
+           
+          <li  *ngIf="ck"> <a routerLink="/user">{{email}}</a></li>
+          
+         
+    
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid text-center">  
+       
+    <div class="row">
+      <div class="d-inline-block col-sm-2 sidenav" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="500">
+          <br/>
+        <div class="btn-group-vertical d-inline-block" role="group" style="width:100%;position:sticky;top:0;">
+            <br/><br/><br/>
+            
+            <a   class="btn btn-primary" data-bs-hover-animate="pulse" style="margin-bottom:5px;width:100%;background-color:#ff880d;" routerLink="/introduction"
+                    type="button" id="index" routerLink="/java">Introduction to Java
+        </a>
+            
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button" id="lets-start"  routerLink="/java-lets-program">Let's Program
+            </a>
+            
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button" id="i-am-data" routerLink="/ComingSoon" >Know Data Types
+            </a>
+            
+            <a
+                    class="btn btn-primary" data-bs-hover-animate="pulse"  
+                    type="button" id="oprator" routerLink="/ComingSoon">Operators
+        </a>
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button">Input by Users
+    </a>
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button">Loop and loop
+</a>
+            <a
+                    class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button">Decide and Loop
+</a>
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button">My Function()
+</a>
+            <a class="btn btn-primary" data-bs-hover-animate="pulse"
+                     type="button">
+                Array
+</a>
+         </div>
+    
+        </div>
+  
+      <div class="d-inline-block col-sm-7 text-left" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="500"> 
+          <br><br><br/>
+          <div>
+                <div id="traverse" style="float:right;">
+                        
+                            <button class="btn btn-primary"  routerLink="/not-found">Let's Program</button>
+                        
+                    </div>
+                    <br/><br/>
+                    <p id="introduction"></p><br/><br/><br/>
+                <h1  itemprop="name">Learn Java : Introduction
+                </h1>
+                <hr>
+                <div id="content">
+                    <p itemprop="articleSection">
+                        Java is one of the most popular and important programming language in the world. Due to its distinct features, it is the most widely used language in every corner of the world and human life. From software and web applications to robotics, Java has become the most wanted language in today’s times.
+                    </p>
+                
+                    <br/><br/>
+                    <h2 id="feature">What make Java distinguishable ?
+                    </h2>
+                    <hr>
+                    <ul style="font-size:16px;">
+                          <span itemprop="articleBody">
+                             <p>There are many features of Java which makes it so different from other programming languages. As a result, it has become a must in software and hardware industries.
+
+                                    Let's have a look at some of those features.</p> 
+                             <li><b>Simple</b> - It is designed to be easy to learn.
+                                </li>
+                             <li>Object-oriented - In Java, everything is based around Object which has some data and behaviour. Java can be easily extended as it is based on Object Model.
+                             <li><b>Platform independent</b> - This means that the same program works on any platform (operating system) without needing any modification.</li>
+                             <li><b>Robust</b> - Robust means strong. Java is a robust management as it has a feature of automatic garbage collection and memory management.
+                                </li>
+                             <li><b>Portable</b> - Programs written in Java are portable i.e., programs written for one type of computer or operating system can be run on another type of computer or operating system.
+                                </li>
+                             <li><b>High-performance</b> - Java enables high performance with the use of just-in-time compilers.</li>
+                            
+                             
+                          </span>
+                    </ul>
+                    
+             
+                    <p id="application"></p><br/><br/><br/>
+                    <h2 >Applications of Java                    </h2>
+                    <hr style="margin-top:30px;">
+                    <p>
+                            Java is not only used in software but is also widely used in designing hardware controlling software components. According to Sun, 3 billion devices run Java.
+                    </p><p>
+                            Following are some of the usage of Java :
+                    </p>  
+                    <ul style="font-size:16px;">
+                            <span itemprop="articleBody"> 
+                           <li> Desktop Applications such as acrobat reader, media player, antivirus etc.</li>
+                           <li>Web Applications</li>
+                                <li>Mobile Operating System like Android</li>
+                                        <li>Embedded System</li>
+                                                <li>Robotics</li>
+                                                        <li>Banking applications</li>
+                                                                <li>Games</li>
+                            </span>
+                    </ul>
+                    
+                    <p id="waconwindows"></p><br/><br/><br/>
+                    <h3  >How To Start?</h3>
+                    <hr>
+                    <h4>Windows</h4>
+                    <hr>
+                  <p>  Here, we will talk about running a Java code using NetBeans and Command Prompt.</p>
+
+                  <p>You may need to install the Java Development Kit from their website. You can download it from here. </p>
+                    
+                        <p><b>NetBeans</b> </p>
+                    
+                                <p>1. Download and start NetBeans IDE.</p>
+                    
+                                        <p>2. In the IDE, choose File > New File, as shown in the figure below. </p>
+                    <p>    <img alt="opening file in devc++" src="assets/img/java_ide_file.jpg" style="width:60%;height:auto;width:auto/9;">
+                    </p>
+                    <p>
+                        3. Choose Java Class.
+                    </p>
+                    <p>    <img alt="opening file in devc++" src="assets/img/java_ide_filee.jpg" style="width:60%;height:auto;width:auto/9;">
+                    </p>
+                    <p>
+                            4. Give the Class Name Hello.
+                        </p>
+                        <p>    <img alt="opening file in devc++" src="assets/img/java_ide_class.jpg" style="width:60%;height:auto;width:auto/9;">
+                        </p>
+                    <p>Then click on Finish.</p>
+                    <p>5. Type your Java code in the Source Editor window and save it (ctrl+s)
+
+                        </p>
+                       
+                        <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="java"><div class="highlight"><p><span></span><span class="kd">class</span><span class="nc">Hello</span><span class="o">{{'{'}}</span><br>
+                                 <span class="kd">public </span> <span class="kd">static </span> <span class="kt">void </span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{{'{'}}</span><br>
+                                    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World"</span><span class="o">);</span><br>
+                                    <span class="o">{{'}'}}</span><br>
+                                    <span class="o">{{'}'}}</span><br>
+                                </p></div> 
+                                </div>
+                                </div>
+                                </div> <p>
+                        <img alt="writing on file in devc++" src="assets/img/java_code.jpg"
+                             style="width:60%;height:auto;width:auto/9;">
+                    </p>
+                    <p>6. Now right click on the file and click Run File, the IDE automatically compiles it. You can see Hello World printed on the bottom of the screen.</p>
+                    <p>
+                        <img alt="writing on file in devc++" src="assets/img/java_ide_compile.jpg"
+                             style="width:60%;height:auto;width:auto/9;">
+                    </p>
+                    <p>
+                            <img alt="writing on file in devc++" src="assets/img/java_ide_run.png"
+                                 style="width:60%;height:auto;width:auto/9;">
+                        </p>
+                       
+                    <p>
+                       <b> Command Prompt</b>
+                    </p>
+                    <p>1. Write your Java program ( code given below ) in a text editor like Notepad and save it with a filename with .java extension. In our case, we named it as hello.java.</p>
+                    <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="java"><div class="highlight"><p><span></span><span class="kd">class</span><span class="nc">Hello</span><span class="o">{{'{'}}</span><br>
+                             <span class="kd">public </span> <span class="kd">static </span> <span class="kt">void </span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{{'{'}}</span><br>
+                                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World"</span><span class="o">);</span><br>
+                                <span class="o">{{'     }'}}</span><br>
+                                <span class="o">{{'}'}}</span><br>
+                            </p></div> 
+                            </div>
+                            </div>
+                            </div>
+                    <p>
+                            2. Open the Command Prompt Window ( search for cmd ).</p>
+
+                           <p> 3. To check if Java is installed, type java -version and press Enter. If Java is installed, you will see a message stating what version of Java is currently installed. </p>
+                           <p>
+                                <img alt="writing on file in devc++" src="assets/img/java_cmd_version.jpg"
+                                     style="width:60%;height:auto;width:auto/9;">
+                            </p>
+                   <p>If not, you may need to install the Java Development Kit from their website. You can download it from here.
+
+                   </p><p>   4. Let's assume that you have installed Java in C:\Program files\Java directory.
+                        
+                    </p><p>    Right click on My Computer and select properties.
+                        
+                        </p><p>   5. Go to the Advance System Settings tab.</p> 
+                        
+                        <p>
+                                <img alt="writing on file in devc++" src="assets/img/path.jpg"
+                                     style="width:60%;height:auto;width:auto/9;">
+                            </p>
+                    <p>6. Click on the Environment Variables button.</p>
+
+                         <p>   Now alter the path variable so that it also contains the path to the JDK installed directory. Change the variable value to your folder containing Java ( C:\program files\Java\jdk1.8.0_25\bin in our case ).
+                            
+                            </p>
+                            <p>
+                                    <img alt="writing on file in devc++" src="assets/img/path_var.jpg"
+                                         style="width:60%;height:auto;width:auto/9;">
+                                </p>
+                    <p>7. Use the command cd followed by the directory name to change your working directory. For example, if you are operating in C:\Users\John\Project and want to get to C:\Users\John\Project\prog ,then you need to type cd prog and press Enter. ( This directory should contain your previously created Java file ( hello.java in our case )).
+
+                    </p><p>      8. Once you are in the correct directory in which you have your program, then you can compile and run your program.
+                            
+                        </p><p>      To compile, type javac filename.java ( javac hello.java in our case ) and press Enter. Here, our filename is hello.java, so we will write 'javac hello.java'. If it is showing any error, then try to remove that error from your program and then again save and compile your program.</p>
+                        <p>
+                                <img alt="writing on file in devc++" src="assets/img/compile_cmd.jpg"
+                                     style="width:60%;height:auto;width:auto/9;">
+                            </p>
+                            <p>9. Once the program is compiled, run the program by typing java classname ( java Hello in our case ) and then pressing Enter. Name of the class is Hello written after class in java file.</p>
+                            <p>
+                                    <img alt="writing on file in devc++" src="assets/img/run.jpg"
+                                         style="width:60%;height:auto;width:auto/9;">
+                                </p>
+                            
+                             <p id="linux" >   We will get the output as follows. Now, you are ready to go for the next chapter.
+                                </p>
+
+                    <h3><b>Linux</b></h3>
+                    <hr>
+                    <p>
+                    <p></p>  For Linux, you can write your Java program in various text editors like vim (or vi), gedit or Emacs. For running your Java program in Linux, follow the steps below.
+
+                    <p></p>         1. Open Terminal<b> ( ctrl+alt+T ).</b>
+                            
+                    <p></p>          If you don't have Java installed in your computer, then first install it. This is a nice tutorial to install java in Ubuntu.
+                            
+                    <p></p>        2. Open a new file with .java extension in your favourite text editor ( we are using gedit ). The command is :
+                            
+                    <p></p>       <b> gedit hello.java </b>
+                    <p>       <b> hello.java </b> is the name of the file.
+                    </p>
+                    <p>
+                            <img alt="writing on file in devc++" src="assets/img/java_gedit.png"
+                                 style="width:60%;height:auto;width:auto/9;">
+                        </p>
+                    <p>3. Then to compile the program type javac filename.java and press Enter. We will be typing javac hello.java.
+
+                        </p>
+                        <p>
+                                <img alt="writing on file in devc++" src="assets/img/java_compile.png"
+                                     style="width:60%;height:auto;width:auto/9;">
+                            </p>
+                        <p>4. To run the program, type java classname ( name of the class is Hello which is written after class in the code ). It will type Hello World on the screen.
+
+                            </p>
+                            <p>
+                                    <img alt="writing on file in devc++" src="assets/img/java_run.png"
+                                         style="width:60%;height:auto;width:auto/9;">
+                                </p>
+                        <p>Pressing Enter will display the output as follows.
+
+                                So, now you can write and run Java codes. We will explain the code in the next chapter.</p>
+                           
+                   
+
+
+
+
+
+
+
+
+                    <hr>
+                    <div  style="float:right;">
+                        
+                        <a class="btn btn-primary" 
+                        type="button" id="lets-start"  routerLink="/not-found">Let's Program
+                </a>
+                        
+                    </div>
+                </div>
+             </div>
+        
+      </div>
+      
+      <br/><br/>
+      <div class="d-inline-block col-sm-2 float-left aos-init aos-animate" id="fadeshow" >
+
+        <div style="right:0; margin-top: 100px; float: right;" data-aos="fade-left" data-aos-delay="2000" data-aos-duration="500">
+            <div class="scrollspy">
+                        <!-- Links -->
+                        <ul class="scrollspy nav-piils default-pills smooth-scroll" data-allow-hashes="" id="myscrollspy" >
+                            <li class="nav-item"><a class="nav-link active"  (click)="scrollTo('introduction')">Introduction of Java</a></li>
+                            <br><br>
+                            <li class="nav-item"><a class="nav-link"  (click)="scrollTo('feature')">Features of Java</a></li>
+                            <br><br>
+                            <li class="nav-item"><a class="nav-link" (click)="scrollTo('application')">Applications of Java</a></li>
+                        
+                            <br><br>
+                            <li class="nav-item"><a class="nav-link" (click)="scrollTo('waconwindows')" >How to Start?</a></li>
+                            <br><br>
+                            <li class="nav-item"><a class="nav-link" (click)="scrollTo('waconwindows')" >Java in Windows</a></li>
+                            <br><br><li class="nav-item"><a class="nav-link" (click)="scrollTo('linux')" >Java in Linux</a></li>
+                            
+                        </ul>
+                        <!-- Links -->
+        </div>
+        
+        
+      
+    </div>
+      <button (click)="scrollTo('traverse')" id="myBtn" title="Go to top">^</button>
+    </div>
+  </div>
+  
+
+
+  
+  

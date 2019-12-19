@@ -1,0 +1,353 @@
+<nav class="navbar navbar-default navbar-fixed-top" data-aos="fade-down" data-aos-delay="500" data-aos-duration="500">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                       
+        </button>
+        
+        <p class="navbar-brand"   routerLink="/">Dev's Tutorial</p>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#tutorials"><b>TUTORIALS</b></a></li>
+          <li><a href="#services">COURSES</a></li>
+          <li><a href="#portfolio">ACTIVITY</a></li>
+          <li><a href="#pricing">PRICING</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          
+         
+    
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid text-center">  
+       
+    <div class="row">
+      <div class="d-inline-block col-sm-2 sidenav" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="500">
+          <br/>
+        <div class="btn-group-vertical d-inline-block" role="group" style="width:100%;position:sticky;top:0;">
+            <br/><br/><br/>
+            
+            <a   class="btn btn-primary" data-bs-hover-animate="pulse"  routerLink="/introduction"
+                    type="button" id="index" routerLink="/java">Introduction to Java
+        </a>
+            
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" style="margin-bottom:5px;width:100%;background-color:#ff880d;"
+                    type="button" id="lets-start"  routerLink="/lets-start">Let's Program
+            </a>
+            
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button" id="i-am-data" routerLink="/im-data" >Know Data Types
+            </a>
+            
+            <a
+                    class="btn btn-primary" data-bs-hover-animate="pulse"  
+                    type="button" id="oprator">Operators
+        </a>
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button">Input by Users
+    </a>
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button">Loop and loop
+</a>
+            <a
+                    class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button">Decide and Loop
+</a>
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button">My Function()
+</a>
+            <a class="btn btn-primary" data-bs-hover-animate="pulse"
+                     type="button">
+                Array
+</a>
+         </div>
+    
+        </div>
+  
+      <div class="d-inline-block col-sm-7 text-left" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="500"> 
+          <br><br><br/>
+          <div>
+                <div id="traverse" style="float:left;">
+                        
+                        <button class="btn btn-primary"  routerLink="/java">Introduction to Java</button>
+                    
+                </div>
+           
+                <div id="traverse" style="float:right;">
+                        
+                            <button class="btn btn-primary"  routerLink="/not-found">Know Your Data Types</button>
+                        
+                    </div>
+                    <br/><br/>
+                    <h1 id="topic" itemprop="name">Basics of Java</h1>
+                <hr>
+                <div id="content">
+                        <p itemprop="articleSection">Let's start the beautiful journey of Java. We will start by explaining the previous code which printed "Hello World" on the screen for you.</p>
+                    
+
+
+                        <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="java"><div class="highlight"><p><span></span><span class="kd">class</span><span class="nc">Hello</span><span class="o">{{'{'}}</span><br>
+                                            <span class="kd">public </span> <span class="kd">static </span> <span class="kt">void </span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{{'{'}}</span><br>
+                                               <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World"</span><span class="o">);</span><br>
+                                               <span class="o">{{'     }'}}</span><br>
+                                               <span class="o">{{'}'}}</span><br>
+                                           </p></div> 
+                                           </div>
+                                </div>
+                                <div class="button_output button_outputone collapsed" data-target="#one" data-toggle="collapse" aria-expanded="false">
+                                <span>Output</span>
+                                </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="one" aria-expanded="false" style="height: 0px;">
+                                <div class="code_out code_outone well">
+                                                Hello World
+                                            </div>
+                                </div>
+                                </div>
+                                <p itemprop="articleSection">You won't be able to understand the code thoroughly in this first chapter. But you will get everything gradually. So, we will start explaining here only the basics so that at least you can start to code.</p>
+                                <p itemprop="articleBody"><strong style="color:brown;">class Hello -</strong> '<strong>Hello</strong>' is just the <strong>name of a class</strong> ( full details of the class will be explained later ). There could be any other name of the class like first_program, my_code, etc. But while compiling, you also need to execute your main class. E.g.- for linux, type javac filename.java ( filename is the name of your file ) then java Hello ( as Hello is your main class ( as it contains the main method ) ).
+                                    </p>
+                                <p><strong style="color:brown;">public static void main(String[] args) -</strong> It is the <strong>main method</strong> ( you will know about methods later ). Its significance is that whenever you run your code, the main method is executed first. So, you won't be able to execute your code without the main method. So, for now just learn to write this way, these things will be explained in later chapters.</p> 
+                                <p><strong style="color:brown;">System.out.print() -</strong> print is a function which is available in System directory. It is used to <strong>display</strong> something on the screen.</p>
+
+                                <p>
+                                        <img alt="writing on file in devc++" src="assets/img/fig4.png"
+                                             style="width:60%;height:auto;width:auto/9;">
+                                    </p>
+                                    <p>So, the main thing you have to focus on here is how to write your codes. You have to follow this format:</p>
+                                    <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div ><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">CLASSNAME</span><span class="o">{{'{'}}</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){{'{'}}</span>
+                <span class="n">STATEMENT</span>
+                <span class="n">STATEMENT</span>
+                <span class="n">STATEMENT</span>
+                <span class="o">....</span>
+    <span class="o">{{'}'}}</span>
+<span class="o">{{'}'}}</span>
+                                            </pre></div>
+                                            </div>
+                                            </div>
+                                            </div>
+
+                                            <p>In Java, we <strong>end our statements</strong> with <strong>';' ( semicolon )</strong>. Notice <strong>';'</strong> after the end of System.out.print()<strong>;</strong></p>
+                                            <p><strong>{{'{ }'}}</strong> - {{'{ }'}} represents the <strong>body</strong> ( content ) of class or method in Java. So, it represents what things are inside which class or method. E.g.- <b>class CLASSNAME{{'{'}}  main method{{'{'}} statement {{'}'}}{{'}'}}</b> - 'main method' and 'statement' are both inside the 'CLASSNAME' class ( as both are inside {{'{}'}} of the class). 'statement' is also inside the 'main method' ( as it is inside{{'{}'}}  of the 'main method' also ).</p>
+                                            <p>
+                                                    <img alt="writing on file in devc++" src="assets/img/fig6.png"
+                                                         style="width:60%;height:auto;width:auto/9;">
+                                            </p>
+                                            <h4 id="new">Let's have a newline</h4>
+                                            <p>See this code:</p>
+                                            <div class="row">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="java"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Hello</span><span class="o">{{'{'}}</span>
+        <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">{{'){'}}</span>
+                    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Hello\nWorld\n"</span><span class="o">);</span>
+         <span class="o">{{'}'}}</span>
+    <span class="o">{{'}'}}</span>
+                                                    </pre></div>
+                                                    </div>
+                                                    <div class="button_output button_outputone" data-target="#two" data-toggle="collapse">
+                                                    <span>Output</span>
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="two">
+                                                    <div class="code_out code_outone well">
+                                                                    Hello<br>World
+                                                                </div>
+                                                    </div>
+                                                    </div>
+                                                    <p>See the difference here. After "Hello World", a new line is printed.</p>
+                                                    <p><strong>'\n'</strong> is the <strong>newline character</strong>. You can think like - while printing "HelloWorld\n", when Java encounters 'H', it prints 'H' on the screen and when 'e', then 'e' and when it encounters '\n', it comes to a new line.
+                                                    </p>
+                                                    <p>Try this:</p>
+                                                    <div class="row">
+                                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="java"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Hello</span><span class="o">{{'{'}}</span>
+         <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">{{'){'}}</span>
+                     <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Hello World\n\n"</span><span class="o">);</span>
+         <span class="o">{{'}'}}</span>
+    <span class="o">{{'}'}}</span>
+                                                            </pre></div>
+                                                            </div>
+                                                            <div class="button_output button_outputone collapsed" data-target="#three" data-toggle="collapse" aria-expanded="false">
+                                                            <span>Output</span>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="three" aria-expanded="false" style="height: 0px;">
+                                                            <div class="code_out code_outone well">
+                                                                            Hello World<br><br>
+                                                            </div>
+                                                            </div>
+                                                            </div>
+                                                            <p>Observe the result yourself.</p>
+                                                            <p>Let's do the same thing in a bit different way by using '<strong>println</strong>' function instead of 'print'. 'println' automatically prints a new line at the end without having '\n'. Let's see an example on this.</p>
+                                                            <div class="row">
+                                                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                                                    <div class="java"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Hello</span><span class="o">{{'{'}}</span>
+         <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">{{'({'}}</span>
+                    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World"</span><span class="o">);</span>
+         <span class="o">{{'}'}}</span>
+        <span class="o">{{'}'}}</span>
+                                                                    </pre></div>
+                                                                    </div>
+                                                                    <div class="button_output button_outputone collapsed" data-target="#four" data-toggle="collapse" aria-expanded="false">
+                                                                    <span>Output</span>
+                                                                    </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="four" aria-expanded="false" style="height: 0px;">
+                                                                    <div class="code_out code_outone well">
+                                                                                    Hello World
+                                                                                </div>
+                                                                    </div>
+                                                                    </div>
+                                                                    <p>So, println("Hello World") is same as print("Hello World\n").</p>
+                                                                    <p>
+                                                                            <img alt="writing on file in devc++" src="assets/img/fig8.png"
+                                                                                 style="width:60%;height:auto;width:auto/9;">
+                                                                    </p>
+                                                                    <h3 id="comment">Commenting</h3>
+                                                                    <hr>
+                                                                    <p>Comment is some text written inside code which is just ignored by the compiler while compiling your code.  Comments are written to make our code more readable. These are written within '<b>/* */</b>' or after <b>//</b>.</p>
+                                                                    <h4>Why comments</h4>
+                                                                    <p>As mentioned earlier, it makes our code more readable. Assume that you have written a software and after releasing it, you hired few good programmers for maintenance. Without comments, it would be a very difficult job for them to understand your code. And most of the time it happens that the person who has written a code is not the one who is going to modify it. So, make a habit of writing comments.</p>
+                                                                    <p>Comments are written after <b>//</b>. These are single line comments. It means that if you change the line, then the new line will not be the part of comment.</p>
+                                                                    <div class="row">
+                                                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                                            <div class="java"><div class="highlight"><pre><span></span><span class="c1">//This is single line comment</span>
+                                                                            <span class="c1">//This is also a comment</span>
+    <span class="kd">class</span> <span class="nc">Hello</span><span class="o">{{'{'}}</span>
+                <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">{{'({'}}</span>
+                            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World"</span><span class="o">);</span>
+                 <span class="o">{{'}'}}</span>
+    <span class="o">{{'}'}}</span>
+                                                                            </pre></div>
+                                                                            </div>
+                                                                            <div class="button_output button_outputone" data-target="#fourr" data-toggle="collapse">
+                                                                            <span>Output</span>
+                                                                            </div>
+                                                                            </div>
+                                                                            <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="fourr">
+                                                                            <div class="code_out code_outone well">
+                                                                                            Hello World
+                                                                                        </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            <p>Comments can be multilined also as used in the example given below. But we can't put one comment inside another e.g.- <strong>/* This is a /*comment*/ */</strong> is <strong>invalid</strong>. </p>
+                                                                            <h4 id="join">Join</h4>
+                                                                            <hr>
+                                                                            <p><b>+</b> is used to join two strings. The example given below will make it clear.</p>
+                                                                            <div class="row">
+                                                                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                                                                    <div class="java"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Hello</span><span class="o">{{'{'}}</span>
+        <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">{{'({'}}</span>
+                        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello "</span><span class="o">+</span><span class="s">"World"</span><span class="o">);</span>
+         <span class="o">{{'}'}}</span>
+<span class="o">{{'}'}}</span>
+                                                                                    </pre></div>
+                                                                                    </div>
+                                                                                    <div class="button_output button_outputone" data-target="#six" data-toggle="collapse">
+                                                                                    <span>Output</span>
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="six">
+                                                                                    <div class="code_out code_outone well">
+                                                                                                    Hello World
+                                                                                                </div>
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    <p>Coding is all about practice and solving questions. So, solve questions as much as you can. Solve questions after completing every chapter then only go to the next chapter.</p>
+                                                                                    <div class="well imp_well">
+                                                                                            <div class="row">
+                                                                                            <div class="col-md-1 col-sm-1 well_one">
+                                                                                            <i class="fa fa-code"></i>
+                                                                                            </div>
+                                                                                            <div class="col-md-11 col-sm-11 well_two"><p>In future, when writing long codes, make sure that you run your code from time to time while writing instead of completing your whole code and running at last. This will make debugging your code easier if you have made some errors.</p>
+                                                                                            </div>
+                                                                                            </div>
+                                                                                            </div>
+                                                                                            <div class="well imp_one" style="text-align:center;">
+                                                                                                    <p>In theory, there is no big difference between theory and practice. But in practice, there is.<br><span style="float:right;">-Yogi Berra</span></p>
+                                                                                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            
+
+
+
+
+
+
+
+
+
+
+
+
+                    <hr>
+                    <div  style="float:left;">
+                        
+                            <a class="btn btn-primary" 
+                            type="button" id="lets-start"  routerLink="/java">Introduction to Java
+                    </a>
+                            
+                        </div>
+                    <div  style="float:right;">
+                        
+                        <a class="btn btn-primary" 
+                        type="button" id="lets-start"  routerLink="/not-found">know Data Types
+                </a>
+                        
+                    </div>
+                </div>
+             </div>
+        
+      </div>
+      
+      <br/><br/>
+      <div class="d-inline-block col-sm-2 float-left aos-init aos-animate" id="fadeshow" >
+        <div style=" margin-top: 100px; float: right;" data-aos="fade-left" data-aos-delay="2000" data-aos-duration="500">
+            <div class="scrollspy">
+                        <!-- Links -->
+                        <ul class="scrollspy nav-piils default-pills smooth-scroll" data-allow-hashes="" id="myscrollspy" >
+                            <li class="nav-item"><a class="nav-link active"  (click)="scrollTo('topic')">Basics of Java</a></li>
+                            <br><br>
+                            <li class="nav-item"><a class="nav-link"  (click)="scrollTo('new')">Let's Have a New Line</a></li>
+                            <br><br>
+                            <li class="nav-item"><a class="nav-link" (click)="scrollTo('comment')">Commenting</a></li>
+                            <br><br>
+                            <li class="nav-item"><a class="nav-link" (click)="scrollTo('join')" >Join</a></li>
+                            <br><br>
+                            
+                        </ul>
+                        <!-- Links -->
+        </div>
+        
+        
+      </div>
+      <button (click)="scrollTo('topic')" id="myBtn" title="Go to top">^</button>
+    </div>
+  </div>
+  
+
+
+  
+  

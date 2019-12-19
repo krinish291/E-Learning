@@ -1,0 +1,164 @@
+ <!-- <div class="col-sm-4 sidenav"><br><br>
+</div>
+<div class="col-sm-4 sidenav"><br><br>
+
+<div class="container">
+
+    <div class="card bg-dark text-center mx-auto">
+      <div class="card-header">
+        <h2 style="color:darkorange">Welcome</h2>
+        <br>
+        <h4 class="text-white">Update Your detailes</h4>
+      </div>
+      <div class="card-body">
+  
+        <form >
+          <div class="form-group" >
+            <label for="carname">First Name</label>
+            <input type="text" class="form-control" id="firstname" placeholder="first Name" name="firstname" [(ngModel)]="firstname">
+          </div>
+          <div class="form-group" >
+            <label for="carname">Last Name</label>
+            <input type="text" class="form-control" id="lastname" placeholder="last Name" name="lastname" [(ngModel)]="lastname">
+          </div>
+          <div class="form-group">
+            <label for="carclass">Email</label>
+            <input type="text"  class="form-control" id="emai" placeholder="Email" name="email" [(ngModel)]="email">
+          </div>
+          <div class="form-group">
+            <label for="carclass">phone No</label>
+            <input type="text"  class="form-control" id="phone" placeholder="phone" name="phone" [(ngModel)]="phone">
+          </div>
+          <button type="submit" class="btn btn-default" (click)="update({'firstname':firstname,'lastname':lastname,'email':email,'phone':phone})">Submit</button>
+        </form>
+  
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+<div class="col-sm-4 sidenav"><br><br>
+</div>  -->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+  integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<br><br><br><br><br><br><br><br><br><br><br>
+<style>
+  input[placeholder],
+  [placeholder],
+  *[placeholder] {
+    color: red;
+
+  }
+
+  ::placeholder {
+    font-size: 15px;
+    ;
+  }
+</style>
+<div class="container h-100">
+  <div class="d-flex justify-content-center h-100">
+    <div class="user_card">
+      <div class="d-flex justify-content-center">
+        <div class="brand_logo_container">
+          <img src="assets/img/login.jpg" class="brand_logo" alt="Logo">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center form_container">
+        <form id="formData" role="form" style="display: block;">
+          <div class="input-group mb-3">
+            <div class="input-group-append">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <div class="form-group">
+              <input style="min-width: 200px;min-height: 40px;
+                            padding: 12px 20px;
+                            font-size:20px;
+                            margin: 8px 0;
+                            box-sizing: border-box;" type="text" [value]="firstname" [(ngModel)]="firstname"
+             name="firstname" id="firstname" tabindex="1" class="form-control"
+                class="form-control input_user">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+              </div>
+              <div class="form-group">
+
+                <input style="min-width: 200px;min-height: 40px;
+                                    padding: 12px 20px;
+                                    font-size:20px;
+                                    margin: 8px 0;
+                                    box-sizing: border-box;" type="text" [(ngModel)]="lastname" name="lastname"
+                  id="lastname" tabindex="1" class="form-control" class="form-control input_user">
+              </div>
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+              </div>
+              <div class="form-group">
+
+                <input style="min-width: 200px;min-height: 40px;
+                                            padding: 12px 20px;
+                                            font-size:20px;
+                                            margin: 8px 0;
+                                            box-sizing: border-box;" type="email" [(ngModel)]="email" name="email"
+                  id="email" tabindex="1" class="form-control" class="form-control input_user" disabled>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-append">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <div class="form-group">
+
+              <input style="min-width: 200px;min-height: 40px;
+                                            padding: 12px 20px;
+                                            font-size:20px;
+                                            margin: 8px 0;
+                                            box-sizing: border-box;" type="tel" [(ngModel)]="phone" name="phone"
+                id="phone" tabindex="1" class="form-control" class="form-control input_user">
+            </div>
+          </div>
+
+
+        </form>
+      </div>
+      <div class="d-flex justify-content-center mt-3 login_container">
+
+        <div class="d-flex justify-content-center mt-3 login_container">
+          <input type="submit" style="min-width: 200px;min-height: 40px;" name="login-submit"
+            (click)="update({'firstname':firstname,'lastname':lastname,'email':email,'phone':phone})" id="login-submit"
+            tabindex="4" class="btn login_btn" value="Update">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-3 login_container">
+
+        <br>
+        <div class="d-flex justify-content-center mt-3 login_container">
+          <input type="submit" style="min-width: 200px;min-height: 40px;" name="signup-submit" routerLink="/home"
+            id="signup-submit" tabindex="5" class="btn login_btn" value="Home">
+        </div>
+        <br>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br>

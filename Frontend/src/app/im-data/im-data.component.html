@@ -1,0 +1,535 @@
+<app-navbar></app-navbar>
+<div class="container-fluid text-center">  
+
+    <div class="row content">
+        <div class="col-sm-2 sidenav" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="500">
+            <br/>
+            <br/><br/><br/>
+            <a   class="btn btn-primary" data-bs-hover-animate="pulse"  routerLink="/introduction"
+                    type="button" id="index" routerLink="/introduction">Introduction to C
+        </a>
+            
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button" id="lets-start"  routerLink="/lets-start">Let's Start
+            </a>
+            
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" style="margin-bottom:5px;width:100%;background-color:#ff880d;"
+                    type="button" id="i-am-data" routerLink="/im-data" >I'm Data
+            </a>
+            
+            <a
+                    class="btn btn-primary" data-bs-hover-animate="pulse"  
+                    type="button" id="oprator">Operators
+        </a>
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button">Decide if/else
+    </a>
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button">Loop and loop
+</a>
+            <a
+                    class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button">Decide and Loop
+</a>
+            <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                    type="button">My Function()
+</a>
+            <a class="btn btn-primary" data-bs-hover-animate="pulse"
+                     type="button">
+                Point Me
+</a>
+        </div>
+   
+    
+  
+      <div class="col-sm-7 text-left" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="500"> 
+          <br><br><br/><br/>
+            <!-- aya main code mukvo -->
+            <div>
+                    <div id="traverse" style="float:left;">
+                    
+                        <button class="btn btn-primary" style="margin-bottom:5px;background-color:#222222;width:95%;height:38px;" routerLink="/lets-start">Let's Start</button>
+                    
+                </div>
+                <div id="traverse" style="float:right;">
+                  
+                        <button class="btn btn-primary" style="margin-bottom:5px;background-color:#222222;width:95%;height:38px;" routerLink="/lets-start">Operators</button>
+              
+                </div>
+                <br><br>
+                <p id="topic"></p><br><br>
+                  <h1  itemprop="name">Data Types in C</h1>
+                  <hr>
+                  <div id="content">
+                    <p itemprop="articleSection">Before a variable can be used in program, it needs to be declared. Data types
+                      are used for assigning a type to a variable.</p>
+                    <p>Let's take an example.</p>
+                    <div class="row">
+                      <div >
+                        <div class="c">
+                          <div class="highlight">
+                             <pre><span></span><span class="cp">#include</span> <span
+                                 class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+              <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+              <span class="p">{{'{'}}</span>
+              
+                <span class="c1">//defining an integer x</span>
+                <span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+              
+                <span class="c1">//now this x is 10</span>
+                <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+                <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+              <span class="p">{{'}'}}</span>
+              </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="one">
+                      <div class="code_out code_outone well"></div>
+                    </div>
+                  </div>
+                  <span itemprop="articleBody">
+                    <p>Let's understand the code.</p>
+                    <p><code>int x;</code> → This is known as declaration of x. As discussed earlier, it will allocate a space in the memory of the computer to 'x' and the amount of space allocated will depend on the complier.</p>
+                 </span>
+               <p>
+                 <code>x = 10</code> → It is assigning the value '10' to the variable 'x'. We can give any value to 'x'.
+               </p>
+               <p>
+                 We have given an integer value to the variable 'x' because we have already declared that the variable 'x' is
+                 an integer - <code>int x</code>. If we want to give something other than an integer like a character value
+                 to 'x', then we use <b>char</b> before x (in place of int). Similarly, if we want to give a decimal value,
+                 then we use <b>float</b> or <b>double</b> before 'x'.
+               </p>
+               <p><b>%d</b> is for <b>int</b><br><b>%c</b> is for <b>char</b><br><b>%f</b> is for <b>float</b></p>
+               <p>Let's see an example of taking and displaying a <code>float</code>, a <code>double</code> and a
+                 <code>char</code> value.</p>
+              
+                 <div class="row">
+                  <div >
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="c">
+                        <div class="highlight">
+                           <pre><span></span><span class="cp">#include</span> <span
+                               class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+            <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+            <span class="p">{{'{'}}</span>
+              <span class="kt">float</span> <span class="n">a</span><span class="p">;</span>
+              <span class="kt">int</span> <span class="n">b</span><span class="p">;</span>
+              <span class="kt">char</span> <span class="n">ch</span><span class="p">;</span>
+            
+              <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span
+                                 class="s">Enter value of float</span><span class="se">\n</span><span
+                                 class="s">"</span><span class="p">);</span>
+              <span class="n">scanf</span><span class="p">(</span><span class="s">"%f"</span><span class="p">,</span> <span
+                                 class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
+            
+              <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span
+                                 class="s">Enter value of int</span><span class="se">\n</span><span
+                                 class="s">"</span><span class="p">);</span>
+              <span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span> <span
+                                 class="o">&amp;</span><span class="n">b</span><span class="p">);</span>
+            
+              <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span
+                                 class="s">Enter value of char</span><span class="se">\n</span><span
+                                 class="s">"</span><span class="p">);</span>
+              <span class="n">scanf</span><span class="p">(</span><span class="s">" %c"</span><span class="p">,</span> <span
+                                 class="o">&amp;</span><span class="n">ch</span><span class="p">);</span>
+            
+              <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span
+                                 class="s">Value of float : %f"</span><span class="p">,</span> <span
+                                 class="n">a</span><span class="p">);</span>
+              <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span
+                                 class="s">Value of int : %d"</span><span class="p">,</span> <span
+                                 class="n">b</span><span class="p">);</span>
+              <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span
+                                 class="s">Value of char : %c"</span><span class="p">,</span> <span
+                                 class="n">ch</span><span class="p">);</span>
+              <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span
+                                 class="s">Value of float(rounded) : %.2f</span><span class="se">\n</span><span
+                                 class="s">"</span><span class="p">,</span> <span class="n">a</span><span
+                                 class="p">);</span>
+            
+              <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="p">{{'}'}}</span>
+            </pre>
+                        </div>
+                      </div>
+                      <div class="button_output button_outputone" data-target="#two" data-toggle="collapse">
+                        <span>Output</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="two">
+                    <div class="code_out code_outone well">
+                      Enter value of float<br>
+                      <span style="color:#ce9d9d">2.4</span><br>
+                      <br>
+                      Enter value of int<br>
+                      <span style="color:#ce9d9d">23</span><br>
+                      <br>
+                      Enter value of char<br>
+                      <span style="color:#ce9d9d">d</span><br>
+                      <br>
+                      Value of float : 2.400000<br>
+                      Value of int : 23<br>
+                      Value of char : d<br>
+                      Value of float(rounded) : 2.40
+                    </div>
+                  </div>
+                  <p>So, you can see here that <code>%d</code> is used for integers, <code>%f</code> for floats and
+                    <code>%c</code> for characters.</p>
+                  <p>As simple as that!</p>
+                  <div class="well imp_well">
+                    <div class="row">
+                      <div class="col-md-1 col-sm-1 well_one">
+                        <i class="fa fa-code"></i>
+                      </div>
+                      <div class="col-md-11 col-sm-11 well_two">
+                        %.2f means that the variable to be printed will be of type float and '.2' means that the number
+                        rounded to only two decimal places will be printed. We can use any number to which we have to round
+                        our decimal value.
+                      </div>
+                    </div>
+                  </div>
+                  <p>One thing you should note that char values are given inside (<code>''</code>). An example will make it clear:
+                  </p>
+                  <div class="row">
+                    <div >
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="c">
+                          <div class="highlight">
+                             <pre><span></span><span class="cp">#include</span> <span
+                                 class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+              <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+              <span class="p">{{'{'}}</span>
+                <span class="c1">//defining a char ch</span>
+                <span class="kt">char</span> <span class="n">ch</span><span class="p">;</span>
+              
+                <span class="c1">//now this ch is 'a'</span>
+                <span class="n">ch</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
+              
+                <span class="n">printf</span><span class="p">(</span><span class="s">"%c</span><span class="se">\n</span><span
+                                   class="s">"</span><span class="p">,</span><span class="n">ch</span><span
+                                   class="p">);</span>
+              
+                <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+              <span class="p">{{'}'}}</span>
+              </pre>
+                          </div>
+                        </div>
+                        <div class="button_output button_outputone" data-target="#twoo" data-toggle="collapse">
+                          <span>Output</span>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="twoo">
+                        <div class="code_out code_outone well">
+                          a
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>As you saw, <b>(a)</b> is written inside (''). i.e., <b>'a'</b></p>
+
+
+                  <p id="su"></p><br/><br/><br/>
+              
+              
+                  <h2 id="su">Signed and Unsigned</h2>
+                  <hr>
+                  <p>It’s fun to play with data types, isn’t it?</p>
+                  <p>Now let's see what is meant by <b>signed</b> and <b>unsigned</b> variables.</p>
+                  <p>Signed and Unsigned variables tell us whether it can take positive values, negative values or both.
+                    <b>signed</b> keyword is used for those variables which can take positive as well as negative values. <b>unsigned</b>
+                    keyword is used for those variables which can take only values which are zero or positive i.e., without -
+                    (negative sign).</p>
+                  <p>
+                    We can use signed and unsigned keywords with only 'int' and 'char' data types.
+                  </p>
+                  <p>
+                    For example, normally an integer variable of size 4 bytes can take values from -2,147,483,648 to
+                    2,147,483,647, whereas if we declare 'x' as
+                  </p>
+                  <div style="background-color:#ebebeb;font-size:15px;border:1px solid #d4d4d4;padding-left:8px;padding-top:3px;margin-bottom:10px;line-height:25px;font-weight:500;">
+                    <p>
+                      unsigned int x;
+                    </p>
+                  </div>
+                  <p>then 'x' can take values from 0 to 4,294,967,295 (since 'x' is now an unsigned variable).</p>
+                  <div class="well imp_well">
+                    <div class="row">
+                      <div class="col-md-1 col-sm-1 well_one">
+                        <i class="fa fa-code" ></i>
+                      </div>
+                      <div class="col-md-11 col-sm-11 well_two">
+                        It is not necessary to give signed keyword to any variable because all the variables are signed by
+                        default.
+                      </div>
+                    </div>
+                  </div>
+                  <p>For 16 or 32 bit compiler</p>
+                  <table id="t">
+                    <tbody>
+                    <tr>
+                      <th>Type</th>
+                      <th>Size</th>
+                      <th>Range of Value</th>
+                    </tr>
+                    <tr>
+                      <td>int</td>
+                      <td>2 or 4 bytes</td>
+                      <td>-32,768 to 32,767 or -2,147,483,648 to 2,147,483,647</td>
+                    </tr>
+                    <tr>
+                      <td>unsigned int</td>
+                      <td>2 or 4 bytes</td>
+                      <td>0 to 65,535 or 0 to 4,294,967,295</td>
+                    </tr>
+                    <tr>
+                      <td>char</td>
+                      <td>1 byte</td>
+                      <td>-128 to 127 or 0 to 255</td>
+                    </tr>
+                    <tr>
+                      <td>signed char</td>
+                      <td>1 byte</td>
+                      <td>-128 to 127</td>
+                    </tr>
+                    <tr>
+                      <td>unsigned char</td>
+                      <td>1 byte</td>
+                      <td>0 to 255</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <div class="well imp_well" style="margin-top:20px;">
+                    <div class="row">
+                      <div class="col-md-1 col-sm-1 well_one">
+                        <i class="fa fa-code"></i>
+                      </div>
+                      <div class="col-md-11 col-sm-11 well_two">
+                        In printf, %d is used for signed integers whereas %u is used with unsigned integers.
+                      </div>
+                    </div>
+                  </div>
+                  <p id="cvs"></p><br/><br/><br/>
+                  <h2 >How is a character value stored?</h2>
+                  <hr>
+                  <p>
+                    Whenever a character value is given to a variable of type char, its <b><a
+                      href="https://www.codesdope.com/media/pdf/ASCII.pdf" target="_blank">ASCII value</a></b> gets stored
+                    (and not the character value).
+                  </p>
+                  <p>
+                    While printing a character, if we use <b>%c</b>, then its <b>character value</b> will be displayed and if we
+                    use <b>%d</b>, then its <b>integer value (ASCII value)</b> will be displayed.
+                  </p>
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="c">
+                        <div class="highlight">
+                          <pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span
+                              class="cp"></span>
+              <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+              <span class="p">{{'{'}}</span>
+                <span class="kt">char</span> <span class="n">ch</span><span class="p">;</span>
+              
+                <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span
+                                class="s">Enter value of char</span><span class="se">\n</span><span
+                                class="s">"</span><span class="p">);</span>
+                <span class="n">scanf</span><span class="p">(</span><span class="s">"%c"</span><span class="p">,</span> <span
+                                class="o">&amp;</span><span class="n">ch</span><span class="p">);</span>
+              
+                <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span
+                                class="s">Character value of character = %c"</span><span class="p">,</span> <span
+                                class="n">ch</span><span class="p">);</span>
+                <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span
+                                class="s">ASCII value = %d</span><span class="se">\n</span><span
+                                class="s">"</span><span class="p">,</span> <span class="n">ch</span><span class="p">);</span>
+              
+                <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+              <span class="p">{{'}'}}</span>
+              </pre>
+                        </div>
+                      </div>
+                      <div class="button_output button_outputone" data-target="#three" data-toggle="collapse">
+                        <span>Output</span>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="three">
+                      <div class="code_out code_outone well">
+                        Enter value of char<br>
+                        <span style="color:#ce9d9d">a</span><br>
+                        Character value of character = a<br>
+                        ASCII value = 97
+                      </div>
+                    </div>
+                  </div>
+                  <p>When we gave the value 'a' to the variable 'ch', the ASCII code (97) of 'a' gets stored in ch. So, <b>%d</b>
+                    displayed its <b>integer value</b> i.e., ASCII value and <b>%c</b> displayed its character value.</p>
+                  
+                    <p id="tc"></p><br/><br/><br/>
+                    <h2 id="tc">Type Casting </h2>
+                    <hr>
+                    <p>Suppose, you have a variable whose value is 23.2332 but at some line of your code, you want to use its
+                      integer value (floor value) only i.e., 23. The simplest solution is <b>type casting<b></b>.</b></p>
+                    <p>
+                      <b>Type Casting</b> is the conversion of a variable from one data type to another data type. For example,
+                      converting a char value to an int value.
+                    </p>
+                    <p>Type Conversions are of two types - implicit and explicit.</p>
+                
+                    <p id="ic"></p><br/><br/><br/>
+                    <h3 >Implicit Conversion</h3>
+                    <hr>
+                    <p>
+                      Suppose we are adding an integer and a character in C, for example, <code>2 + 'a'</code>. This is a valid
+                      expression in C because C automatically converts the character value of 'a' to integer (ASCII value) and
+                      then adds them up. This automatic conversion is called implicit conversion.
+                    </p>
+                    <div class="well imp_well" style="margin-top:20px;">
+                      <div class="row">
+                        <div class="col-md-1 col-sm-1 well_one">
+                          <i class="fa fa-code"></i>
+                        </div>
+                        <div class="col-md-11 col-sm-11 well_two">
+                          All the character variables get converted to integers while performing arithmetic operations or in
+                          any other such expression.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="c">
+                          <div class="highlight">
+                            <pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span
+                                class="cp"></span>
+                <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+                <span class="p">{{'{'}}</span>
+                  <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">12</span><span
+                                  class="p">;</span>
+                  <span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="sc">'h'</span><span
+                                  class="p">;</span>
+                
+                  <span class="c1">//will add ASCII value of ch</span>
+                  <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">a</span> <span
+                                  class="o">+</span> <span class="n">ch</span><span class="p">;</span>
+                  <span class="n">printf</span><span class="p">(</span><span class="s">"Sum = %d</span><span class="se">\n</span><span
+                                  class="s">"</span><span class="p">,</span> <span class="n">sum</span><span
+                                  class="p">);</span>
+                
+                  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="p">{{'}'}}</span>
+                </pre>
+                          </div>
+                        </div>
+                        <div class="button_output button_outputone" data-target="#four" data-toggle="collapse">
+                          <span>Output</span>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="four">
+                        <div class="code_out code_outone well">
+                          Sum = 116
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      In the above code, when 'a' and 'ch' were added, the integer value of 'ch' (ASCII value) i.e. 104 is added
+                      to integer value of 'a' to produce a sum of 116.
+                    </p>
+                    <p id="ec"></p><br/><br/><br/>
+                    <h3>Explicit Conversion</h3>
+                    <hr>
+                    <p>
+                      We can also manually convert values from one data type to another as follows:
+                    </p>
+                    <p>
+                      <b>
+                        <span style="color:blue">(</span>
+                        data-type
+                        <span style="color:blue">)</span>
+                        value
+                        <span style="color:brown">;</span>
+                      </b>
+                    </p>
+                    <p>
+                      Here, the 'value' will get converted to the 'data-type' mentioned. For example, <code>(int)2.5</code> will
+                      convert 2.5 into an integer of its floor value.
+                    </p>
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="c">
+                          <div class="highlight">
+                            <pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span
+                                class="cp"></span>
+                <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+                <span class="p">{{'{'}}</span>
+                   <span class="kt">float</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">2.45</span><span
+                                  class="p">;</span>
+                   <span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span
+                                  class="s">"</span><span class="p">,(</span><span class="kt">int</span><span
+                                  class="p">)</span><span class="n">x</span><span class="p">);</span>
+                   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="p">{{'}'}}</span>
+                </pre>
+                          </div>
+                        </div>
+                        <div class="button_output button_outputone" data-target="#five" data-toggle="collapse">
+                          <span>Output</span>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="five">
+                        <div class="code_out code_outone well">
+                          2
+                        </div>
+                      </div>
+                    </div>
+                    <p>In this example, 'x' is declared of type float and we are converting <b>float</b> to type <b>int</b> by
+                      writing <code>(int)x</code> inside 'printf'.</p>
+                    <div id="quote">
+                      <div><span>There is no glory in practice but there is no glory without practice.</span></div>
+                    </div>
+                    <hr>
+                  </div>
+                  <div id="traverse" style="float:left;">
+                    
+                      <button class="btn btn-primary" style="margin-bottom:5px;background-color:#222222;width:95%;height:38px;" routerLink="/lets-start" >Let's Start</button>
+                
+                  </div>
+                  <div id="traverse" style="float:right;">
+                    
+                      <button class="btn btn-primary" style="margin-bottom:5px;background-color:#222222;width:95%;height:38px;" routerLink="/lets-start" >Operators</button>
+                    
+                  </div>
+            <!-- aya puro thse -->
+          
+      </div>
+      </div>
+      <div class="d-inline-block col-sm-3 float-left aos-init aos-animate"  id="fadeshow">
+        <div style=" margin-top: 100px;" data-aos="fade-left" data-aos-delay="2000" data-aos-duration="500">
+            <div class="scrollspy">
+                        <!-- Links -->
+                        <ul class="scrollspy nav-piils default-pills smooth-scroll" data-allow-hashes="" id="myscrollspy" >
+                            
+                            <li class="nav-item"><a class="nav-link"  (click)="scrollTo('topic')">Data Types in C</a></li>
+                            <br><br>
+                            <li class="nav-item"><a class="nav-link" (click)="scrollTo('su')">Signed and Unsigned</a></li>
+                            <br><br>
+                            <li class="nav-item"><a class="nav-link" (click)="scrollTo('cvs')" >How Character Value is Stored?</a></li>
+                            <br><br>
+                            <li class="nav-item"><a class="nav-link" (click)="scrollTo('tc')" >Type Casting</a></li>
+                            <br><br>
+                            <li class="nav-item"><a class="nav-link" (click)="scrollTo('ic')" >Implcit Conversion</a></li>
+                            <br><br>
+                            <li class="nav-item"><a class="nav-link" (click)="scrollTo('ec')" >Explicit Conversion</a></li>
+                        </ul>
+                        <!-- Links -->
+        </div>
+        
+      </div>
+    </div>        <button (click)="scrollTo('traverse')" id="myBtn" title="Go to top">^</button></div>
+  
+  
+
+</div>  

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Atproject</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <style>
+    input[type=text] {
+      width: 130px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      /* background-image: url('src/search.png'); */
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 15px 10px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+      margin-top:5px; 
+      margin-bottom:5px
+
+    }
+
+    input[type=text]:focus {
+     width: 100%;
+    }
+  </style>
+    <script src="assets/JS/smooth_scrolling.js"></script>
+    <script src="assets/JS/text_animation.js"></script> 
+    <script src="assets/JS/click.js"></script>
+    <script src="assets/JS/toggle.js"></script>
+    <script src="assets/JS/search.js"></script>
+    <script src="assets/JS/admin.js"></script>
+    <script src="assets/JS/ajax.js"></script>
+    <!-- quiz -->
+    <script>$(document).ready(function(){
+        $("button.btn").click(function(){
+            
+            $(".btn").filter("#true").text("A.Right Answer").css({"color": "red", "background-color": "rgb(0,255,0)"});
+            $(".btn").filter(".false").css({"color": "yellow", "background-color": "red"});
+      });
+      // jQuery methods go here...
+      
+      });</script>
+      <!-- script for aos-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/Footer-with-button-logo.css">
+      <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+      <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+      
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script>
+        AOS.init();
+        $(document).ready(function(){
+    $("#showlink").click(function(){
+      $("#hiddencourses").slideToggle(1000);
+      $("div").find("#s1").toggleClass("glyphicon glyphicon-chevron-down");
+      $("div").find("#s2").toggleClass("glyphicon glyphicon-chevron-up");
+     
+    });
+  });
+  $(window).scroll(function(){
+  
+  $('p').each(function() {
+      if($(window).scrollTop() >= $(this).offset().top + $(this).height() || $(window).scrollTop() < $(this).offset().top)
+          $(this).removeClass('active');
+      else
+          $(this).addClass('active');
+  });
+  
+  });
+  
+      </script>
+      
+
+</head>
+<body>
+   
+  <app-root></app-root>
+  <base href="/">
+</body>
+</html>

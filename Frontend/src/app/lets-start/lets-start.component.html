@@ -1,0 +1,560 @@
+<app-navbar></app-navbar>
+        
+        <div class="container-fluid text-center">  
+        
+            <div class="row content">
+                <div class="col-sm-2 sidenav" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="500">
+                    <br/>
+                    <div class="btn-group-vertical d-inline-block" role="group" style="width:100%;position:sticky;top:0;">
+                        <br><br><br>
+                        <a   class="btn btn-primary" data-bs-hover-animate="pulse"  routerLink="/introduction"
+                        type="button" id="index">Introduction to C
+            </a>
+                
+                <a class="btn btn-primary" data-bs-hover-animate="pulse" style="margin-bottom:5px;width:100%;background-color:#ff880d;"
+                        type="button" id="lets-start"  routerLink="/lets-start">Let's Start
+                </a>
+                
+                <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                        type="button" id="i-am-data" routerLink="/im-data" >I'm Data
+                </a>
+                
+                <a
+                        class="btn btn-primary" data-bs-hover-animate="pulse"  
+                        type="button" id="oprator">Operators
+            </a>
+                <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                        type="button">Decide if/else
+        </a>
+                <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                        type="button">Loop and loop
+    </a>
+                <a
+                        class="btn btn-primary" data-bs-hover-animate="pulse" 
+                        type="button">Decide and Loop
+    </a>
+                <a class="btn btn-primary" data-bs-hover-animate="pulse" 
+                        type="button">My Function()
+    </a>
+                <a class="btn btn-primary" data-bs-hover-animate="pulse"
+                         type="button">
+                    Point Me
+    </a>
+                </div>
+            </div>
+            
+          
+            <div class="col-sm-7 text-left" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="500"> 
+                  <br><br>
+                  <!-- ani vache mukvu -->
+                  <div class="container-fluid">
+                  <div id="traverse" style="float:left;">
+                          <button class="btn btn-primary" routerLink="/introduction" >Introduction to C</button>
+                                
+                          </div>
+                  <div id="traverse" style="float:right;">
+                          <a>
+                                  <button class="btn btn-primary" routerLink="/im-data" >I'm Data</button>
+                          </a>      
+                  </div>
+                  <p id="topic"></p><br><br><br><br>
+                        <h1 >Basics of C</h1>
+                        <hr>
+                        <div id="content">
+                                <p>Now let's start from where we left off, 'The Hello World' code.</p>
+                                <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div class="c">
+                                                        <div class="highlight">
+                                   <pre><span></span><span class="cp">#include</span> <span
+                                                   class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+        <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+        <span class="p">{{'{'}}</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Hello World</span><span
+                                                           class="se">\n</span><span class="s">"</span><span class="p">);</span>
+            <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">{{'}'}}</span>
+        </pre>
+                                                        </div>
+                                                </div>
+                                                <div class="button_output button_outputone" data-target="#one_one" data-toggle="collapse">
+                                                        <span>Output</span>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="one_one">
+                                                <div class="code_out code_outone well">
+                                                        Hello&nbsp;World
+                                                </div>
+                                        </div>
+                                </div>
+                                <p>On compiling the above code, "Hello World" gets printed on the screen.</p>
+                                <p>So, we have just written a code which can print anything on the screen. Sounds good!
+                                        Now, let's understand this code in detail so that we can print any other message.
+                                </p>
+                                <p>Let's start from <code>printf("Hello World\n");</code> → <b>printf</b> is a <b>function</b> which
+                                        displays whatever is written inside the brackets <code>( )</code> on the screen.</p>
+                                <p>We have used a word function, so let's discuss what it is.</p>
+                                <p>A <b>function</b> is like a machine which takes something from us (not necessarily) and then performs an
+                                        operation on it. In simple words, a function takes an <b>input</b> from the user and gives back an <b>output</b>.
+                                </p>
+                                <img alt="functions in c" src="assets/img/fig16.png" style="width:43%;height:auto;width:auto/9;">
+                                <p id="twoi">In the above example, <code>printf</code> is taking "Hello World\n" as input and in return,
+                                        displaying "Hello World" on the screen.</p>
+                                <p>So, we gave "Hello World\n" to the <code>printf</code> function and it printed (displayed) "Hello World"
+                                        on the screen without '\n'. So, let's discuss what it is.</p>
+                                <p><code>\n</code> is a special character called <b>newline character</b> which is used for changing lines
+                                        or printing new lines. So, '\n' after the 'Hello World' changed the line or printed a new line. Let's
+                                        run the following code for an example.</p>
+                                <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div class="c">
+                                                        <div class="highlight">
+                                   <pre><span></span><span class="cp">#include</span> <span
+                                                   class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+        <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+        <span class="p">{{'{'}}</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Hello</span><span class="se">\n</span><span
+                                                           class="s"> World</span><span class="se">\n</span><span class="s">"</span><span
+                                                           class="p">);</span>
+            <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">{{'}'}}</span>
+        </pre>
+                                                        </div>
+                                                </div>
+                                                <div class="button_output button_outputone" data-target="#two" data-toggle="collapse">
+                                                        <span>Output</span>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="two">
+                                                <div class="code_out code_outone well">
+                                                        Hello<br>&nbsp;World
+                                                </div>
+                                        </div>
+                                </div>
+                        
+                                <p>As you can see, '\n' printed a new line between 'Hello' and 'World'. So, '\n' is used to print a new line
+                                        in our program.</p>
+                                <div class="well imp_well">
+                                        <div class="row">
+                                                <div class="col-md-1 col-sm-1 well_one">
+                                                        <i class="fa fa-code"></i>
+                                                </div>
+                                                <div class="col-md-11 col-sm-11 well_two">
+                                                        Try writing the same code without '\n' at the last, you will see that the cursor won't change
+                                                        line and will start printing everything on the same line.
+                                                </div>
+                                        </div>
+                                </div>
+                                <p>
+                                        So we are clear with the <code>printf("Hello World\n")</code> part, let's proceed further and discuss
+                                        more about the code we have written.
+                                </p>
+                                <p><code>;</code> → Semicolon tells the compiler about the end of a statement. We need to put ';' at the end
+                                        of every statement like function calls, variable declarations, etc.</p>
+                                <p>
+                                        So, by putting ';' at the end of <code>printf("Hello World\n")</code>, we have ended that statement
+                                        there. Anything written after that will be a new statement. For example, <code>printf("Hello World\n");
+                                        return0;</code> is totally valid and C will treat both these as different statements even they are on a
+                                        same line.
+                                </p>
+                                <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div class="c">
+                                                        <div class="highlight">
+                                   <pre><span></span><span class="cp">#include</span> <span
+                                                   class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+        <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+        <span class="p">{{'{'}}</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Hello World</span><span
+                                                           class="se">\n</span><span class="s">"</span><span class="p">);</span> <span
+                                                           class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">{{'}'}}</span>
+        </pre>
+                                                        </div>
+                                                </div>
+                                                <div class="button_output button_outputone" data-target="#one_one" data-toggle="collapse">
+                                                        <span>Output</span>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="one_one">
+                                                <div class="code_out code_outone well">
+                                                        Hello World
+                                                </div>
+                                        </div>
+                                </div>
+                                <p>
+                                        We have understood everything about the <code>printf("Hello World\n");</code> statement, let's learn
+                                        about <code>int main()</code>.
+                                </p>
+                                <p><code>int main()</code> → <b>main</b> is also a <b>function</b>. It is compiled first when a C code is
+                                        executed that is, the execution of any C program starts from the <code>main()</code> function.
+                                        <code>int</code> before <code>main</code> means that the function will return (or give us back) an
+                                        integer.</p>
+                                <p>
+                                        Since the execution of every C program starts from this <code>main</code> function, all C programs must
+                                        have this <code>main()</code> function.
+                                </p>
+                                <p><code>{{'{'}} {{'}'}}</code> → The curly braces ({{'{'}} {{'}'}}) just after the <code>main()</code> function <b>encloses</b> the
+                                        <b>body</b> of the <code>main()</code> function. It means that it represents what things are inside the
+                                        'main' or the body of the 'main'.</p>
+                                <img alt="use of {} in c body" src="assets/img/fig6.png" style="width:60%;height:auto;width:auto/9;">
+                                <p>
+                                        Till now, we know that to print 'Hello World' on the screen, we used <code>printf</code> and to execute
+                                        this statement, we put this statement inside the <code>main</code> function (inside <code>{{'{'}} {{'}'}}</code>
+                                        after main) because C will execute the <code>main</code> function and thus, the statements inside it
+                                        will be executed. Let's move ahead and understand the rest of the code.
+                                </p>
+                                <p>
+                                        <code>return 0</code> → As mentioned earlier, the <code>main</code> function returns an integer value
+                                        (<code>int main()</code>), therefore we are returning 0 here. <b>return</b> is a keyword which is used
+                                        to return some value from a function. Returning 0 indicates that our program has been run successfully
+                                        and we terminate our main function with this return statement.
+                                </p>
+                                <p>
+                                        You will go through a whole chapter on functions, so just keep this structure in your mind to write
+                                        programs and you will understand all these in a much better way in the Function chapter.
+                                </p>
+                                <p><code><br>#include &lt;stdio.h&gt;</code> → <b>stdio.h</b> stands for <b>standard input output</b>. It is
+                                        a <b>library</b> in C which contains definitions of functions such as 'printf'. Thus, it will tell the
+                                        compiler how 'printf' should work. <b>#include</b> is a <b>pre-processor</b> which is used to link the
+                                        program with stdio.h (pre-processors will be taught in later chapters).</p>
+                                <img alt="functions in c" src="assets/img/fig17.png" style="width:60%;height:auto;width:auto/9;">
+                                <p>So, the conclusion is - '#include' will make 'stdio.h' library available for use and then our computer
+                                        will know what is 'printf'. 'stdio.h' contains the definitions of functions like 'printf'. The program
+                                        will start its execution from the 'main' function and the execution of 'main' will make 'printf' to give
+                                        messages on the screen. 'return 0' will return 0 and indicate that our program has been run
+                                        successfully.</p>
+                                <p>
+                                        <img alt="execution of hello world in C" src="assets/img/main_gif.gif"
+                                             style="width:60%;height:auto;width:auto/9;">
+                                </p>
+                                <p>So, the format to write codes in C is like:</p>
+                                <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div class="c">
+                                                        <div class="highlight">
+                                   <pre><span></span><span class="cp">#include</span> <span
+                                                   class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+        <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+        <span class="p">{{'{'}}</span>
+            <span class="n">STATEMENT</span><span class="p">;</span>
+            <span class="n">STATEMENT</span><span class="p">;</span>
+            <span class="n">STATEMENT</span><span class="p">;</span>
+            <span class="p">...</span>
+            <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">{{'}'}}</span>
+        </pre>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <p>Let's try out some examples of printf.</p>
+                                <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div class="c">
+                                                        <div class="highlight">
+                                   <pre><span></span><span class="cp">#include</span> <span
+                                                   class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+        <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+        <span class="p">{{'{'}}</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"  *  </span><span class="se">\n</span><span
+                                                           class="s"> *** </span><span class="se">\n</span><span class="s">*****</span><span
+                                                           class="se">\n</span><span class="s">"</span><span class="p">);</span>
+            <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">{{'}'}}</span>
+        </pre>
+                                                        </div>
+                                                </div>
+                                                <div class="button_output button_outputone" data-target="#three" data-toggle="collapse">
+                                                        <span>Output</span>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="three">
+                                                <div class="code_out code_outone well">
+                                                        &nbsp;&nbsp;*&nbsp;&nbsp;<br>&nbsp;***&nbsp;<br>*****
+                                                </div>
+                                        </div>
+                                </div>
+                                <p id="comment"></p><br><br><br>
+                                <h2 >Commenting</h2>
+                                <hr>
+                                <p>Comments are statements written inside code which are just ignored by the compiler while compiling our
+                                        code. Comments are written to make our code more readable for humans.</p>
+                                <p>Comments are written between <code>"/* ... */"</code> or after <code>//</code>.</p>
+                                
+                                <h3>Why Comments</h3>
+                                <hr>
+                                <p>As mentioned earlier, it makes our code more readable. Assume that you have written a software and after
+                                        releasing it, you hired few good programmers for its maintenance. Without comments, it would be a very
+                                        difficult job for them to understand your code. And most of the time it happens that the person who has
+                                        written a code is not the one who is going to modify it. So, make a habit of writing good comments.</p>
+                                <p>Comments are written after <code>//</code>. These are single line comments. It means that if you change
+                                        the line then the new line will not be the part of the comment.</p>
+                                        
+                                        <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="c">
+                                                                <div class="highlight">
+                                           <pre><span></span><span class="c1">//This is single line comment</span>
+                <span class="c1">//This is also a comment</span>
+                <span class="c1">//and will ignored by the complier</span>
+                <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+                <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+                <span class="p">{{'{'}}</span>
+                    <span class="n">printf</span><span class="p">(</span><span class="s">"Hello World</span><span
+                                                                   class="se">\n</span><span class="s">"</span><span class="p">);</span>
+                    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="p">{{'}'}}</span>
+                </pre>
+                                                                </div>
+                                                        </div>
+                                                        <div class="button_output button_outputone" data-target="#fourr" data-toggle="collapse">
+                                                                <span>Output</span>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="fourr">
+                                                        <div class="code_out code_outone well">
+                                                                Hello World
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <p>Comments can be multiline also as used in the example given below. But we can't put one comment inside
+                                                another eg.- <code>/* This is a /*comment*/ */</code> is <strong>invalid</strong>. </p>
+                                        <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="c">
+                                                                <div class="highlight">
+                                           <pre><span></span><span class="cm">/*Hello World code*/</span>
+                
+                <span class="cm">/* Comments will not be compiled and will be ignored */</span>
+                
+                <span class="cm">/* It is a</span>
+                <span class="cm">multiline</span>
+                <span class="cm">comment*/</span>
+                
+                <span class="c1">//Single line comment</span>
+                <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+                <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+                <span class="p">{{'{'}}</span>
+                    <span class="c1">//printf function</span>
+                    <span class="n">printf</span><span class="p">(</span><span class="s">"Hello World</span><span
+                                                                   class="se">\n</span><span class="s">"</span><span class="p">);</span>
+                    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="p">{{'}'}}</span>
+                </pre>
+                                                                </div>
+                                                        </div>
+                                                        <div class="button_output button_outputone" data-target="#four" data-toggle="collapse">
+                                                                <span>Output</span>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="four">
+                                                        <div class="code_out code_outone well">
+                                                                Hello World
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <p>I hope you are getting things because we are going to move one step further.</p>
+                                                                <p id="input"></p><br><br><br>
+                                        <h2 >Taking Input from User</h2>
+                                        <hr>
+                                        <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="c">
+                                                                <div class="highlight">
+                                           <pre><span></span><span class="cp"># include &lt;stdio.h&gt;</span>
+                <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+                <span class="p">{{'{'}}</span>
+                    <span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+                    <span class="n">printf</span><span class="p">(</span><span class="s">"Enter an integer"</span> <span
+                                                                   class="p">);</span>
+                    <span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span> <span class="p">,</span> <span
+                                                                   class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
+                    <span class="n">printf</span><span class="p">(</span><span class="s">"Entered value is : %d</span><span class="se">\n</span><span
+                                                                   class="s">"</span> <span class="p">,</span> <span class="n">a</span> <span
+                                                                   class="p">);</span>
+                    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="p">{{'}'}}</span>
+                </pre>
+                                                                </div>
+                                                        </div>
+                                                        <div class="button_output button_outputone" data-target="#five" data-toggle="collapse">
+                                                                <span>Output</span>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="five">
+                                                        <div class="code_out code_outone well">
+                                                                Enter a integer<span style="color:#ce9d9d">21</span><br>Entered value is : 21
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <p>Let's try to understand the above code.</p>
+                                        <p>
+                                                <code>int a;</code> → It is a statement which declares that the variable 'a' is an integer. And by this
+                                                declaration, 'a' enters into the world of our program. Since 'a' is in our program, our computer will
+                                                give some space in its memory for 'a'.
+                                        </p>
+                                        <p>
+                                                <img alt="allocation to space to a variable in C" src="assets/img/variable_memory.gif"
+                                                     style="width:60%;height:auto;width:auto/9;">
+                                        </p>
+                                        <p>
+                                                The next statement is <code>printf</code> which we already know that it will print "Enter an integer" on
+                                                the screen.
+                                        </p>
+                                        <p>
+                                                After this, we have <code>scanf</code>. It is another function like <code>printf</code>. As
+                                                <code>printf</code> is used to display something on the screen, <code>scanf</code> is used to take
+                                                values from the keyboard. Its definition is also stored in the 'stdio.h' library.
+                                        </p>
+                                        <p>
+                                                Inside the <code>scanf</code>, we have <code>%d</code> and <code>&amp;a</code>. <code>%d</code> is used
+                                                for integers in C and here, it is telling that the <code>scanf</code> will take an integer value from
+                                                the keyboard.
+                                        </p>
+                                        <p><code>&amp;a</code> → It means <b>at the address of 'a'</b>. As 'a' is in our program, it must be present
+                                                somewhere in the memory of our computer and thus, it must occupy some space in the memory and this
+                                                memory also has an address (you will learn about it later) and <code>&amp;a</code> is pointing to that
+                                                address.</p>
+                                        <p>
+                                                <img alt="address of variable in C" src="assets/img/c_address_of_variable.png"
+                                                     style="width:50%;height:auto;width:auto/9;">
+                                        </p>
+                                        <p>As stated above, <code>scanf</code> function takes data from the user and assigns it to a variable and
+                                                <code>%d</code> written inside the <code>scanf</code> is for taking the integer inputs, <code>scanf("%d",
+                                                        &amp;a)</code> will take the integer input from the keyboard, and if successful, store the value of
+                                                the input at the address of 'a'. In short, it means that the value entered by the keyboard will be
+                                                stored in the variable 'a'.</p>
+                                        <p>
+                                                Now, 'a' will be like
+                                        </p>
+                                        <div><span
+                                                        style="background-color:#939393;border:1px solid black;padding-left:5px;padding-right:5px;">21</span><br><span
+                                                        style="background-color:white;border:1px solid black;padding-left:5px;padding-right:13px;">a</span>
+                                        </div>
+                                        <p></p>
+                                        <p>
+                                                or 'a' will store a value of 21 because 21 has been entered by the keyboard.
+                                        </p>
+                                        <p>In <code>printf("Entered value is : %d\n" , a )</code> everything got printed as it is except
+                                                <code>%d</code>. As stated, '%d' is used for integers. Thus, the complier will look for value for '%d',
+                                                which we are giving by 'a' after a comma(,). So, the value of the variable 'a' will be printed in place
+                                                of '%d' in the <code>printf</code>.</p>
+                                                <div class="row">
+                                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                                                <div class="c">
+                                                                        <div class="highlight">
+                                                   <pre><span></span><span class="cp"># include &lt;stdio.h&gt;</span>
+                        <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+                        <span class="p">{{'{'}}</span>
+                            <span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+                            <span class="kt">int</span> <span class="n">y</span><span class="p">;</span>
+                            <span class="n">printf</span><span class="p">(</span><span class="s">"Enter two integers</span><span
+                                                                           class="se">\n</span><span class="s">"</span> <span class="p">)</span> <span
+                                                                           class="p">;</span>
+                            <span class="n">scanf</span><span class="p">(</span><span class="s">"%d %d"</span> <span class="p">,</span><span
+                                                                           class="o">&amp;</span><span class="n">x</span><span class="p">,</span><span
+                                                                           class="o">&amp;</span><span class="n">y</span><span class="p">);</span>
+                            <span class="kt">int</span> <span class="n">z</span> <span class="o">=</span> <span class="n">x</span><span
+                                                                           class="o">+</span><span class="n">y</span><span class="p">;</span>
+                            <span class="n">printf</span><span class="p">(</span><span class="s">"Entered value is : %d and %d and their sum is %d</span><span
+                                                                           class="se">\n</span><span class="s">"</span> <span class="p">,</span><span
+                                                                           class="n">x</span><span class="p">,</span><span class="n">y</span><span
+                                                                           class="p">,</span><span class="n">z</span> <span class="p">);</span>
+                            <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+                        <span class="p">{{'}'}}</span>
+                        </pre>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="button_output button_outputone" data-target="#six" data-toggle="collapse">
+                                                                        <span>Output</span>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-sm-12 col-xs-12 collapse" id="six">
+                                                                <div class="code_out code_outone well">
+                                                                        Enter two integers<br><span style="color:#ce9d9d">21 2</span><br>Entered value is : 21 and 2 and
+                                                                        their sum is 23
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <p>
+                                                        We have declared two integers 'x' and 'y'. We are taking their values from the user by 'scanf'.
+                                                </p>
+                                                <p>
+                                                        <code>scanf("%d %d" ,&amp;x,&amp;y);</code> → There are <strong>two '%d'</strong> inside 'scanf' to take
+                                                        <strong>two</strong> integers and store them at the address of 'x' and 'y' respectively.
+                                                </p>
+                                                <p>
+                                                        <code>int z = x+y;</code> → We have declared a new integer variable 'z' and it is equal to the sum of
+                                                        the values of 'x' and 'y'. i.e. x+y.
+                                                </p>
+                                                <p>
+                                                        <code>printf("Entered value is : %d and %d and their sum is %d\n" ,x,y,z );</code> → <strong>Three
+                                                        '%d'</strong> are used and their values will be printed from <strong>'x', 'y' and 'z'
+                                                        respectively.</strong>
+                                                </p>
+                                                <p>
+                                                        Overall, we first declared two integers and took their values from the user. Then we declared one more
+                                                        variable 'z' and made it equal to 'x+y' and at last, we printed everything that we wished.
+                                                </p>
+                                                <p>The overall conclusion is that we now know how to take input and make something appear on the screen. You
+                                                        will learn more in the next chapter but do solve questions based on these before going further to have a
+                                                        good control over this chapter.</p>
+                                                <div class="well imp_well">
+                                                        <div class="row">
+                                                                <div class="col-md-1 col-sm-1 well_one">
+                                                                        <i class="fa fa-code"></i>
+                                                                </div>
+                                                                <div class="col-md-11 col-sm-11 well_two">
+                                                                        <p>In future, when writing long codes, make sure that you run your code from time to time while
+                                                                                writing instead of completing your whole code and running at last. This will make debuging
+                                                                                your code easier if you have made some errors.</p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div id="quote">
+                                                        <div><span>The best way to predict the future is to create it.</span></div>
+                                                        <div><span>- Peter Druker</span></div>
+                                                </div>
+                                                <hr>
+                                        </div>
+                                        <div id="traverse" style="float:left;">
+                                                
+                                                        <button class="btn btn-primary" routerLink="/introduction" style="margin-bottom:5px;background-color:#222222;width:95%;height:38px;">Introduction to C</button>
+                                                
+                                        </div>
+                                        <div id="traverse" style="float:right;">
+                                                
+                                                        <button class="btn btn-primary" routerLink="/im-data" style="margin-bottom:5px;background-color:#222222;width:95%;height:38px;" >I'm Data</button>
+                                        </div>
+                                </div>
+                                
+                  <!-- aya main part puro -->
+            </div>
+        
+            <div class="d-inline-block col-sm-3 float-left aos-init aos-animate" id="fadeshow" >
+                <div style=" margin-top: 100px;" data-aos="fade-left" data-aos-delay="2000" data-aos-duration="500">
+                    <div class="scrollspy">
+                                <!-- Links -->
+                                <ul class="scrollspy nav-piils default-pills smooth-scroll" data-allow-hashes="" id="myscrollspy" >
+                                    
+                                    <li class="nav-item"><a class="nav-link" (click)="scrollTo('topic')" >Basics of C</a></li>
+                                    <br><br>
+                                    <li class="nav-item"><a class="nav-link" (click)="scrollTo('comment')" >Commenting</a></li>
+                                    <br><br>
+                                    <li class="nav-item"><a class="nav-link" (click)="scrollTo('input')" >Taking input from User</a></li>
+                                    <br><br>
+                                </ul>
+                                <!-- Links -->
+                </div>
+                
+              </div>
+            </div>
+            <button (click)="scrollTo('topic')" id="myBtn" title="Go to top">^</button>
+        </div>
+          
+          
+         
+        </div>
+        
+        

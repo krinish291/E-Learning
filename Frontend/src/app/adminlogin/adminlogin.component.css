@@ -1,0 +1,38 @@
+.dropdown-menu{
+    min-width: 38rem;
+  }
+
+  input{
+    width: 100%;
+    margin-bottom: 20px;
+    
+    border:none;
+    border-bottom: 1px solid darkorange;
+    padding-bottom: 5px;
+    background:transparent;
+    outline: none;
+    height:40px;
+  }
+
+  .form-control:focus{
+    max-width: 30rem;
+    margin: 2rem;
+    border: none;
+    border-bottom: 1px solid darkorange;
+    background:transparent;
+    outline: none;
+  }
+  .card{
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    max-width: 26rem;
+    min-height: 35rem;
+  }
+
+  .card-header{
+    min-height: 8rem;
+    margin-bottom: 1rem;
+  }
+  .btn{
+    width: 20rem;
+  }

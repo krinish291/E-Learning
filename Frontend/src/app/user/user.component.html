@@ -1,0 +1,109 @@
+
+<!-- 
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                       
+            </button>
+            <a class="navbar-brand" href="#myPage">Dev's Tutorial</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#tutorials"><b>TUTORIALS</b></a></li>
+              <li><a href="#services">COURSES</a></li>
+              <li><a href="#portfolio">ACTIVITY</a></li>
+              <li><a href="#pricing">PRICING</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+      <app-navbar></app-navbar>
+      <div class="container-fluid text-center">  
+      
+            <div class="row content">
+                 <div class="col-sm-2 sidenav"><br><br><br><br>
+                   
+                </div>
+                <div class="col-sm-8 text-left"> 
+                        <br><br>
+                        <h1>Welcome   {{userdata.firstname}}</h1>
+                        
+                        <!--Table for display-->
+                        
+                        <table class="table table-striped" id="PackTab">
+                        <!-- <tr *ngFor="let obj of userdata;let idx=index"> -->
+                            <thead class="thead-dark">
+                                <tr>
+                                
+                                  <th scope="col">firstname</th>
+                                  <th scope="col">lastname</th>
+                                  <th scope="col">email</th>
+                                  <th scope="col">phone no</th>
+                                  
+                                </tr>
+                                </thead>
+                            <tr>
+                                
+                                <td>{{userdata.firstname}}</td>
+                                <td>{{userdata.lastname}}</td>
+                                <td>{{userdata.email}}</td>
+                                <td>{{userdata.phone}}</td>  
+                            </tr><br/><br/>
+                              
+                    </table>
+                    <button type="button" class="btn btn-warning col-sm-2" routerLink="/update/{{userdata.email}}" >Update</button>
+                    <button type="button" class="btn btn-warning col-sm-2" (click)="deleteuser();" style="margin-left: 200px;">Delete</button>
+    
+                    <br/><br/>
+                    
+                    
+                    <H1> MY Contribution </H1>
+                    
+                    <form>
+
+                        <div class="form-group">
+                          <label for="carclass">Email</label>
+                          <input type="text"  class="form-control" id="email" placeholder="Email" name="email" [(ngModel)]="email" style="min-width: 300px;" disabled>
+                        </div>
+                        <div class="form-group">
+                          <label for="carclass">Title</label>
+                          <input type="text"  class="form-control" id="titel" placeholder="title" name="title" [(ngModel)]="title" style="min-width: 300px;">
+                        </div>
+                        <div class=" form-group">
+                            <textarea  class="form-control" id="data" name="data" placeholder="enter your data" rows="10" [(ngModel)]="data"></textarea><br>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="carclass">Link/URL</label>
+                            <input type="text"  class="form-control" id="link" placeholder="link" name="link" [(ngModel)]="link" style="min-width: 300px;">
+                          </div>
+                        <button type="submit" class="btn btn-warning col-sm-2" (click)="addcon({'email':email,'title':title,'data':data,'link':link})">Submit</button>
+                      </form>
+
+                      
+                 </div>
+                    <div class="col-sm-2 sidenav">
+                            <br/>  <br/>  <br/>
+                              <div class="well">
+                                <p>ADS</p>
+                              </div>
+                              <div class="well">
+                                <p>ADS</p>
+                              </div>
+                          </div>
+            </div>
+           
+       
+      
+     
+</div>
+      
+  <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+
+    
+
